@@ -1,0 +1,7 @@
+{{ trim (readFile (replace (replace $.File.Path ".md" ".gmi") ".html" ".gmi")) "\n" | safeHTML }}
+
+## Blog Posts
+
+{{ with .OutputFormats.Get "html" -}}
+=> {{ .Permalink }} More posts on WWW
+{{- end -}}

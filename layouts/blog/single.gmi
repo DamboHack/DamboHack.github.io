@@ -1,0 +1,20 @@
+# {{ $.Title | safeHTML }}
+
+{{ trim (readFile (replace $.File.Path ".md" ".gmi")) "\n" | safeHTML }}
+
+```ASCII
+  *    .  *       .   ,          *
+           .       . .        *
+ *   .   .'    * ,      .       .  ,     *
+   .     *     .'
+   '     .     .  *        *  .'.
+       .   ' '        .    .    '   .
+.  *        ,   *               '      *
+                             .
+         *          .   *
+```
+
+=> / Return to the homepage
+{{- with .OutputFormats.Get "html" }}
+=> {{ .Permalink }} See “{{ $.Title | safeHTML }}” on the WWW
+{{- end }}

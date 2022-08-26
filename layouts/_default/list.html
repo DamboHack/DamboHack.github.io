@@ -1,0 +1,14 @@
+{{ define "main" }}
+
+{{ if .Data.Singular }}
+<h2>{{ .Title }}:</h2>
+<p>
+	<a href="{{ "/blog" | relURL }}">Back to posts</a>
+</p>
+{{ else }}
+<h2>{{ .Title }}</h2>
+{{ end }}
+
+{{ .Content }}
+
+{{ end }}

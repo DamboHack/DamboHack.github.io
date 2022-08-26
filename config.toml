@@ -1,0 +1,21 @@
+title = '🏁🤖🏳️‍🌈'
+baseURL = "example.org"
+languageCode = "en-ca"
+enableGitInfo = false
+
+[[languages.en.menu.main]]
+	identifier = "twitter"
+	name = "🐦 Twt ←"
+	url = "https://twitter.com/dambo_live/"
+	weight = 100
+
+[[languages.en.menu.main]]
+	identifier = "app"
+	name = "→ App 💻"
+	url = "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+	weight = 200
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
